@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nickolas Option | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="branding">
+          <span class="logo">NO</span>
+          <div class="title">
+            <h1>Nickolas Option</h1>
+            <p>Front-End Developer &amp; Designer</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h2>Crafting clean, engaging web experiences.</h2>
+            <p>
+              I build responsive, accessible interfaces that prioritize both
+              performance and delight. Explore my work and reach out if you'd
+              like to collaborate.
+            </p>
+            <div class="cta-group">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Let's Talk</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <div class="card-content">
+              <h3>Latest Focus</h3>
+              <p>Designing a modern analytics dashboard with rich data visuals.</p>
+              <ul>
+                <li>Dark mode theming</li>
+                <li>Interactive charts</li>
+                <li>Realtime updates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="panel">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">About</span>
+            <h2>The person behind the pixels</h2>
+          </div>
+          <div class="panel-content">
+            <p>
+              I'm a web developer who loves transforming ideas into polished
+              digital products. My approach blends thoughtful design with clean
+              code, resulting in experiences that feel effortless to use.
+            </p>
+            <p>
+              When I'm not shipping features, you'll find me experimenting with
+              new CSS techniques, sketching interface concepts, or exploring the
+              latest design systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="panel alt">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Projects</span>
+            <h2>Selected work</h2>
+          </div>
+          <div class="cards">
+            <article class="project-card">
+              <h3>Insightful Analytics</h3>
+              <p>
+                A dashboard tailored for data-driven teams, blending clarity with
+                real-time metrics. Built with a focus on accessibility and
+                responsive design.
+              </p>
+              <a href="#contact" class="card-link">Request a demo</a>
+            </article>
+            <article class="project-card">
+              <h3>Studio Portfolio</h3>
+              <p>
+                A minimalist showcase for a creative studio, featuring subtle
+                animations, storytelling sections, and a CMS-backed blog.
+              </p>
+              <a href="#contact" class="card-link">View case study</a>
+            </article>
+            <article class="project-card">
+              <h3>Commerce Refresh</h3>
+              <p>
+                Revitalized an e-commerce experience with improved navigation,
+                streamlined checkout flows, and thoughtful micro-interactions.
+              </p>
+              <a href="#contact" class="card-link">See redesign</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="panel">
+        <div class="container contact">
+          <div class="section-heading">
+            <span class="eyebrow">Contact</span>
+            <h2>Let's build something together</h2>
+            <p>
+              Interested in collaborating or have a project in mind? Send a note
+              and I'll get back to you shortly.
+            </p>
+          </div>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Jane Doe" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="hello@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Share some project details..."></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Nickolas Option. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/Nickolas-option">GitHub</a>
+          <a href="https://linkedin.com">LinkedIn</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const year = new Date().getFullYear();
+      document.getElementById("year").textContent = year;
+    </script>
+  </body>
+</html>
