@@ -1,157 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nickolas Option | Portfolio</title>
+    <title>МГУшный ПИМС!</title>
+    <meta
+      name="description"
+      content="МГУшный ПИМС — клубничный чай с характером. Посмотри меню, узнай про акции и найди ближайшую точку."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <div class="branding">
-          <span class="logo">NO</span>
-          <div class="title">
-            <h1>Nickolas Option</h1>
-            <p>Front-End Developer &amp; Designer</p>
-          </div>
-        </div>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+    <header class="top-bar">
+      <div class="layout">
+        <a href="#top" class="brand" aria-label="МГУшный ПИМС главная">
+          <span class="brand-icon" aria-hidden="true">🍓</span>
+          <span class="brand-name">PIMS</span>
+        </a>
+        <nav class="primary-nav" aria-label="Главная навигация">
+          <a href="#menu">Меню</a>
+          <a href="#rewards">Акции</a>
+          <a href="#locations">Где попробовать</a>
+          <a href="#partners">Партнёрам</a>
         </nav>
+        <a class="cta-link" href="#contact">Связаться</a>
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h2>Crafting clean, engaging web experiences.</h2>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="layout hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Идеальная формула клубничного чая</p>
+            <h1 id="hero-title">МГУшный ПИМС !</h1>
             <p>
-              I build responsive, accessible interfaces that prioritize both
-              performance and delight. Explore my work and reach out if you'd
-              like to collaborate.
+              Авторский напиток на основе свежезаваренного чая, сочной клубники и
+              натурального молока. Встряхнёт сознание, зарядит энергией перед
+              парами и удивит рецепторы.
             </p>
-            <div class="cta-group">
-              <a class="btn primary" href="#projects">View Projects</a>
-              <a class="btn" href="#contact">Let's Talk</a>
+            <div class="actions">
+              <a class="btn primary" href="#menu">Смотреть меню</a>
+              <a class="btn secondary" href="#locations">Где попробовать?</a>
+              <a class="btn ghost" href="#partners">Стать партнёром</a>
             </div>
           </div>
-          <div class="hero-card" aria-hidden="true">
-            <div class="card-content">
-              <h3>Latest Focus</h3>
-              <p>Designing a modern analytics dashboard with rich data visuals.</p>
-              <ul>
-                <li>Dark mode theming</li>
-                <li>Interactive charts</li>
-                <li>Realtime updates</li>
-              </ul>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="berry"></div>
+            <div class="cup cup-1">
+              <span class="cup-top"></span>
+              <span class="cup-body">
+                <span class="cup-logo">PIMS</span>
+              </span>
+              <span class="cup-bottom"></span>
+            </div>
+            <div class="cup cup-2">
+              <span class="cup-top"></span>
+              <span class="cup-body">
+                <span class="cup-logo">PIMS</span>
+              </span>
+              <span class="cup-bottom"></span>
+            </div>
+            <div class="wave"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu">
+        <div class="layout">
+          <header class="section-heading">
+            <p class="eyebrow">Меню</p>
+            <h2>Три любимых вкуса</h2>
+            <p>
+              Каждая линейка создана бариста МГУ специально для того, чтобы
+              поддерживать тебя во время сессии и радовать в перерывах.
+            </p>
+          </header>
+          <div class="cards-grid">
+            <article class="card">
+              <h3>Физфак Фреш</h3>
+              <p>Зелёный чай, клубника, базилик и лёгкая газировка.</p>
+              <span class="tag">290 ₽</span>
+            </article>
+            <article class="card">
+              <h3>Истфак Латте</h3>
+              <p>Клубничное пюре, молочный улун и топпинг из маршмеллоу.</p>
+              <span class="tag">320 ₽</span>
+            </article>
+            <article class="card">
+              <h3>Мехмат Буст</h3>
+              <p>Чёрный чай, клубника, гуарана и гранатовый сироп.</p>
+              <span class="tag">310 ₽</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rewards" class="section rewards">
+        <div class="layout split">
+          <div class="split-text">
+            <p class="eyebrow light">PIMS Rewards</p>
+            <h2>Каждая шестая — в подарок</h2>
+            <p>
+              Сканируй студенческий, собирай клубничные баллы и получай напитки и
+              мерч. Новички получают приветственный бонус — двойные баллы в первую
+              неделю.
+            </p>
+            <a class="btn light" href="#contact">Подключить бонусы</a>
+          </div>
+          <div class="split-card" aria-hidden="true">
+            <div class="reward-card">
+              <span class="reward-logo">🍓</span>
+              <p class="reward-name">PIMS Rewards</p>
+              <p class="reward-owner">Студент МГУ</p>
+              <p class="reward-bonus">+250 бонусов</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="panel">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">About</span>
-            <h2>The person behind the pixels</h2>
-          </div>
-          <div class="panel-content">
+      <section id="locations" class="section locations">
+        <div class="layout">
+          <header class="section-heading">
+            <p class="eyebrow">Где попробовать</p>
+            <h2>Клубничные точки рядом с кампусом</h2>
             <p>
-              I'm a web developer who loves transforming ideas into polished
-              digital products. My approach blends thoughtful design with clean
-              code, resulting in experiences that feel effortless to use.
+              Забегай между парами или заказывай с доставкой — мы работаем с 8 до
+              22 каждый день.
             </p>
-            <p>
-              When I'm not shipping features, you'll find me experimenting with
-              new CSS techniques, sketching interface concepts, or exploring the
-              latest design systems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="panel alt">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Projects</span>
-            <h2>Selected work</h2>
-          </div>
-          <div class="cards">
-            <article class="project-card">
-              <h3>Insightful Analytics</h3>
-              <p>
-                A dashboard tailored for data-driven teams, blending clarity with
-                real-time metrics. Built with a focus on accessibility and
-                responsive design.
-              </p>
-              <a href="#contact" class="card-link">Request a demo</a>
+          </header>
+          <div class="cards-grid">
+            <article class="card inline">
+              <h3>Главный корпус</h3>
+              <p>1 этаж, рядом с аудиториями А-101 — на вынос за 3 минуты.</p>
+              <a class="card-link" href="https://yandex.ru/maps" target="_blank" rel="noreferrer"
+                >На карте</a
+              >
             </article>
-            <article class="project-card">
-              <h3>Studio Portfolio</h3>
-              <p>
-                A minimalist showcase for a creative studio, featuring subtle
-                animations, storytelling sections, and a CMS-backed blog.
-              </p>
-              <a href="#contact" class="card-link">View case study</a>
-            </article>
-            <article class="project-card">
-              <h3>Commerce Refresh</h3>
-              <p>
-                Revitalized an e-commerce experience with improved navigation,
-                streamlined checkout flows, and thoughtful micro-interactions.
-              </p>
-              <a href="#contact" class="card-link">See redesign</a>
+            <article class="card inline">
+              <h3>Библиотека НБМ</h3>
+              <p>Поп-ап бар с сезонными напитками и скидкой для ночных сов.</p>
+              <a class="card-link" href="https://yandex.ru/maps" target="_blank" rel="noreferrer"
+                >На карте</a
+              >
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="panel">
-        <div class="container contact">
-          <div class="section-heading">
-            <span class="eyebrow">Contact</span>
-            <h2>Let's build something together</h2>
+      <section id="partners" class="section partners">
+        <div class="layout split">
+          <div class="split-text">
+            <p class="eyebrow">Партнёрам</p>
+            <h2>Приведём клубничную магию в твой кампус</h2>
             <p>
-              Interested in collaborating or have a project in mind? Send a note
-              and I'll get back to you shortly.
+              Организуем выездной бар, обучим команду, настроим поставки и
+              поделимся рецептами. ПИМС легко интегрируется в мерчи и события.
             </p>
+            <ul>
+              <li>Франшиза от 30 дней запуска</li>
+              <li>Маркетинговые материалы и обучение</li>
+              <li>Единый контроль качества напитков</li>
+            </ul>
           </div>
+          <div class="split-card highlight">
+            <h3>Готовы начать?</h3>
+            <p>Оставь заявку — за 24 часа вышлем презентацию и дегустационный набор.</p>
+            <a class="btn primary" href="#contact">Стать партнёром</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="layout">
+          <header class="section-heading">
+            <p class="eyebrow">Связаться</p>
+            <h2>Напиши нам в деканат вкуса</h2>
+            <p>
+              Оставь свой email — отправим свежее меню, подборки акций и новости о
+              новых точках.
+            </p>
+          </header>
           <form class="contact-form">
             <label>
-              Name
-              <input type="text" name="name" placeholder="Jane Doe" />
+              Имя
+              <input type="text" name="name" placeholder="Мария" />
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="hello@example.com" />
+              <input type="email" name="email" placeholder="student@msu.ru" />
             </label>
             <label>
-              Message
-              <textarea name="message" rows="4" placeholder="Share some project details..."></textarea>
+              Комментарий
+              <textarea name="message" rows="3" placeholder="Хочу открыть точку в общежитии..."></textarea>
             </label>
-            <button type="submit" class="btn primary">Send Message</button>
+            <button class="btn primary" type="submit">Отправить</button>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>&copy; <span id="year"></span> Nickolas Option. All rights reserved.</p>
-        <div class="social-links">
-          <a href="https://github.com/Nickolas-option">GitHub</a>
-          <a href="https://linkedin.com">LinkedIn</a>
-          <a href="mailto:hello@example.com">Email</a>
+      <div class="layout footer-grid">
+        <div>
+          <a href="#top" class="brand footer-brand">
+            <span class="brand-icon" aria-hidden="true">🍓</span>
+            <span class="brand-name">PIMS</span>
+          </a>
+          <p>Клубничный чай, который заряжает студентов МГУ.</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#menu">Меню</a>
+          <a href="#rewards">Бонусы</a>
+          <a href="#locations">Точки</a>
+          <a href="#partners">Партнёрам</a>
+        </div>
+        <div class="footer-meta">
+          <p>&copy; <span id="year"></span> МГУшный ПИМС. Все права защищены.</p>
+          <a href="mailto:hello@pims-msu.ru" class="footer-link">hello@pims-msu.ru</a>
         </div>
       </div>
     </footer>
